@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 {
   display: table;
   width: 100%;
   height: 100vh;
-  background: url(../img/hero-bg.jpg) top center;
+  background: url(../img/lines.jpg) top center;
   background-size: cover;
 }
 
@@ -155,10 +155,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 8px 20px;
+  padding: 8px 40px;
   border-radius: 2px;
   transition: 0.5s;
-  margin: 10px;
+  margin: 50px;
 }
 
 #hero .btn-get-started {
@@ -874,4 +874,256 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   font-size: 13px;
   color: #ccc;
+}
+
+
+// delete the following line if no text is used
+// edit the line if you wanna use other fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+// use only the available space inside the 400x400 frame
+.frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+	box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+  background: #604D49;
+  color: #333;
+	font-family: 'Open Sans', Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.flipcard{
+	  position: absolute;
+    width: 280px;
+    height: 420px;
+    top: 110px;
+    left: 40px;
+    -webkit-perspective: 800px;
+    perspective: 800px;
+}
+
+.flipcard:hover .flip{
+	transform:rotateX(180deg);
+}
+
+.flip{
+		width: 100%;
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+}
+
+.sideone{
+	z-index: 2;
+	-webkit-transform: rotateX(0);
+	transform: rotateX(0);
+}
+
+.sideone, .sidetwo{
+		position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #FFCE4E;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 3px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.bike{
+    position: relative;
+    top: 52px;
+    -webkit-animation: bouncy .6s ease-in-out 	infinite;
+    animation: bouncy .6s ease-in-out infinite;
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+}
+
+.road{
+	position: absolute;
+	top: 127px;
+	left: 80px;
+	width: 160px;
+	height: 3px;
+	overflow: hidden;
+}
+
+.stripe{
+	position:absolute;
+	background-color:#333;
+	height:3px;
+}
+
+.stripe-one{
+	width:30px;
+	left:10px;
+	animation:road 3s linear infinite;
+}
+
+.stripe-two{
+	width:30px;
+	left:20px;
+	bottom:0;
+	animation:road 3s linear 0.2s infinite;
+}
+
+.stripe-two{
+	width:30px;
+	left:40px;
+	bottom:0;
+	animation:road 3s linear 0.3s infinite;
+}
+
+.stripe-three{
+	width:50px;
+	left:90px;
+	bottom:0;
+	animation:road 3s linear 0.4s infinite;
+}
+
+.stripe-four{
+	width:20px;
+	left:160px;
+	bottom:0;
+	animation:road 3s linear 0.5s infinite;
+}
+
+.stripe-five{
+	width:20px;
+	left:200px;
+	bottom:0;
+	animation:road 3s linear 0.6s infinite;
+}
+
+.stripe-six{
+	width:30px;
+	left:250px;
+	bottom:0;
+	animation:road 3s linear 0.7s infinite;
+}
+
+.stripe-seven{
+	width:20px;
+	left: 300px;
+	bottom:0;
+	animation:road 3s linear 0.8s infinite;
+}
+
+.sidetwo{
+	 transform: rotateX(180deg);
+}
+
+.helicopter{
+	position: relative;
+  z-index: 1;
+  top: 57px;
+	animation:bouncy 1s infinite;
+}
+
+.sky{
+	position: absolute;
+	top: 30px;
+	left: 80px;
+	width: 160px;
+	height:100px;
+	overflow: hidden;
+}
+
+.cloud{
+	position:absolute;
+	background-color:#333;
+	height:3px;
+	width:20px;
+}
+
+.cloud-one{
+	top:10px;
+	left:40px;
+	animation: road 2s linear infinite;
+}
+
+.cloud-two{
+	top:30px;
+	animation: road 2s linear 0.2s infinite;
+}
+
+.cloud-three{
+	top:50px;
+	left:40px;
+	animation: road 2s linear 0.3s infinite;
+}
+
+.cloud-four{
+	top:80px;
+	left:40px;
+	animation: road 2s linear 0.4s infinite;
+}
+
+.cloud-five{
+	left:100px;
+	animation: road 2s linear 0.5s infinite;
+}
+
+.cloud-six{
+	left:130px;
+	top:35px;
+	animation: road 2s linear 0.6s infinite;
+}
+
+.cloud-seven{
+	left:150px;
+	top:50px;
+	animation: road 2s linear 0.7s infinite;
+}
+
+.cloud-eight{
+	bottom:0;
+	left:50px;
+	animation: road 2s linear 0.8s infinite;
+}
+
+
+@keyframes road {
+	0% {
+		transform: translate3d(210px, 0, 0);
+	}
+	100% {
+		transform: translate3d(-210px,0,0);
+	}
+}
+
+@keyframes bouncy {
+	0%{
+		transform:translateY(1px);
+	}
+	50%{
+		transform:translateY(-1px);
+	}
+	100%{
+		transform:translateY(1px);
+	}
+}
+
+
+@keyframes road {
+	0% {
+		transform: translate3d(210px, 0, 0);
+	}
+	100% {
+		transform: translate3d(-210px,0,0);
+	}
 }
