@@ -914,7 +914,7 @@ body {
   width: 100%;
   background: white;
   line-height: 300px;
-  color: #03446A;
+  color: white;
   text-align: center;
   font-size: 60px;
   border-radius: 5px;
@@ -925,4 +925,7 @@ body {
   background: #03446A;
   color: white;
   transform: rotateY( 180deg );
+  font-size: 0.7vw;
+  width: 300px;
+  word-wrap: break-word;
 }
